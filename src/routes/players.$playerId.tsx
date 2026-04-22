@@ -45,12 +45,6 @@ export const Route = createFileRoute('/players/$playerId')({
     </div>
   ),
   errorComponent: ({ error }) => <ErrorFallback error={error} />,
-  meta: ({ loaderData }) => [
-    {
-      title: `${loaderData?.player?.name || 'Player'} - BBL`,
-      description: `View ${loaderData?.player?.name || 'player'} statistics, career history, and performance data for the BBL 2025/2026 season.`,
-    },
-  ],
 })
 
 function PlayerPage() {
