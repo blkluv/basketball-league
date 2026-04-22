@@ -52,12 +52,6 @@ export const Route = createFileRoute('/players')({
   component: PlayersPage,
   pendingComponent: PlayersPageLoading,
   errorComponent: ({ error }) => <ErrorFallback error={error} />,
-  meta: () => [
-    {
-      title: 'Players - BBL',
-      description: 'Browse all BBL players, view statistics, leaderboards, and performance metrics for the 2025/2026 season.',
-    },
-  ],
 })
 
 function PlayersPageLoading() {
