@@ -39,12 +39,6 @@ export const Route = createFileRoute('/')({
   component: Home,
   pendingComponent: HomeLoading,
   errorComponent: ({ error }) => <ErrorFallback error={error} />,
-  meta: () => [
-    {
-      title: 'Business Basketball League - BBL',
-      description: 'The premier basketball league showcasing the best talent in business basketball. View standings, player stats, and match schedules.',
-    },
-  ],
 })
 
 function HomeLoading() {
