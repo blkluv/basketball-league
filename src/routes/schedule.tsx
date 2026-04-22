@@ -46,12 +46,6 @@ export const Route = createFileRoute('/schedule')({
   component: SchedulePage,
   pendingComponent: SchedulePageLoading,
   errorComponent: ({ error }) => <ErrorFallback error={error} />,
-  meta: () => [
-    {
-      title: 'Schedule - BBL',
-      description: 'Check BBL match schedules, upcoming games, past results, and scores for the 2025/2026 season.',
-    },
-  ],
 })
 
 function SchedulePageLoading() {
