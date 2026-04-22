@@ -39,12 +39,6 @@ export const Route = createFileRoute('/teams')({
   component: TeamsPage,
   pendingComponent: TeamsPageLoading,
   errorComponent: ({ error }) => <ErrorFallback error={error} />,
-  meta: () => [
-    {
-      title: 'Teams - BBL',
-      description: 'View all BBL teams, their rosters, statistics, and team information for the 2025/2026 season.',
-    },
-  ],
 })
 
 function TeamsPageLoading() {
