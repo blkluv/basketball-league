@@ -7,13 +7,6 @@ import { parseStandingsTable } from "~/lib/utils";
 
 export const Route = createFileRoute("/standings")({
   component: StandingsPage,
-  meta: () => [
-    {
-      title: "League Standings - BBL",
-      description:
-        "View current BBL league standings, team records, win percentages, and playoff positions for the 2025/2026 season.",
-    },
-  ],
 });
 
 function StandingsPage() {
